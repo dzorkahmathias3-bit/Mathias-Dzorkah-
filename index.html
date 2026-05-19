@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GENTLE SUCCESS Reading & Health</title><style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+header{
+    background: rgba(0,0,0,0.85);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1{
+    font-size: 50px;
+    color: #00ffcc;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px black;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #00ffcc;
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-box{
+    background: rgba(0,0,0,0.7);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 750px;
+    animation: fadeIn 2s ease;
+}
+
+.hero-box h2{
+    font-size: 48px;
+    color: #00ffcc;
+    margin-bottom: 20px;
+}
+
+.hero-box p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #00ffcc;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: white;
+    transform: scale(1.05);
+}
+
+.section{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.section h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card{
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.2);
+}
+
+.card h3{
+    margin-bottom: 15px;
+    color: #00ffcc;
+}
+
+footer{
+    background: rgba(0,0,0,0.9);
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a{
+    color: #00ffcc;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#clock{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.search-box{
+    margin-top: 20px;
+}
+
+.search-box input{
+    width: 70%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.search-box button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #00ffcc;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+</style></head>
+<body><header>
+    <h1>GENTLE SUCCESS</h1>
+    <div id="clock"></div><nav>
+    <a href="#home">Home</a>
+    <a href="#reading">Reading</a>
+    <a href="#health">Health</a>
+    <a href="#tips">Tips</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+</header><section class="hero" id="home">
+    <div class="hero-box">
+        <h2>Reading & Health Hub</h2><p>
+        Welcome to GENTLE SUCCESS Reading and Health Website.
+        Discover educational books, healthy living tips, wellness guides,
+        study materials, and inspirational resources for students and readers.
+    </p>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search books or health topics...">
+        <button onclick="searchMessage()">Search</button>
+    </div>
+
+    <a href="https://www.wikipedia.org" target="_blank" class="btn">Visit Wikipedia</a>
+</div>
+
+</section><section class="section" id="reading">
+    <h2>Reading Resources</h2><div class="cards">
+    <div class="card">
+        <h3>Online Library</h3>
+        <p>Access thousands of free educational books and learning materials.</p>
+        <a href="https://openlibrary.org" target="_blank" class="btn">Open Library</a>
+    </div>
+
+    <div class="card">
+        <h3>Google Books</h3>
+        <p>Read and discover books online from different authors worldwide.</p>
+        <a href="https://books.google.com" target="_blank" class="btn">Google Books</a>
+    </div>
+
+    <div class="card">
+        <h3>Project Gutenberg</h3>
+        <p>Download free classic books and literature resources.</p>
+        <a href="https://www.gutenberg.org" target="_blank" class="btn">Visit Gutenberg</a>
+    </div>
+</div>
+
+</section><section class="section" id="health">
+    <h2>Health & Wellness</h2><div class="cards">
+    <div class="card">
+        <h3>Healthy Lifestyle</h3>
+        <p>Learn how to maintain a healthy body and strong immune system.</p>
+        <a href="https://www.healthline.com" target="_blank" class="btn">Healthline</a>
+    </div>
+
+    <div class="card">
+        <h3>Fitness Guide</h3>
+        <p>Explore fitness exercises and daily workout routines.</p>
+        <a href="https://www.nike.com/training" target="_blank" class="btn">Fitness Tips</a>
+    </div>
+
+    <div class="card">
+        <h3>Mental Health</h3>
+        <p>Discover tips for stress management and mental wellness.</p>
+        <a href="https://www.who.int" target="_blank" class="btn">WHO Website</a>
+    </div>
+</div>
+
+</section><section class="section" id="tips">
+    <h2>Daily Success Tips</h2><div class="cards">
+    <div class="card">
+        <h3>Study Smart</h3>
+        <p>Read for at least 1 hour daily to improve knowledge and confidence.</p>
+    </div>
+
+    <div class="card">
+        <h3>Eat Healthy</h3>
+        <p>Drink enough water and eat balanced meals for good health.</p>
+    </div>
+
+    <div class="card">
+        <h3>Exercise</h3>
+        <p>Exercise regularly to keep your body active and healthy.</p>
+    </div>
+</div>
+
+</section><section class="section" id="contact">
+    <h2>Contact GENTLE SUCCESS</h2><p>Email: dzorkahmathias3@gmail.com</p>
+<p>Phone: +233 545853675</p>
+
+<div class="social-links">
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+</div>
+
+</section><footer>
+    <p>© 2026 GENTLE SUCCESS Reading & Health Website</p>
+</footer><script>
+// Live Clock
+function updateClock(){
+    const now = new Date();
+    document.getElementById('clock').innerHTML = now.toLocaleTimeString();
+}
+
+setInterval(updateClock,1000);
+updateClock();
+
+// Welcome Alert
+window.onload = function(){
+    alert('Welcome to GENTLE SUCCESS Reading & Health Website');
+}
+
+// Search Function
+function searchMessage(){
+    let input = document.getElementById('searchInput').value;
+
+    if(input === ''){
+        alert('Please enter a topic to search');
+    } else {
+        alert('Searching for: ' + input);
+    }
+}
+
+// Card Animation Effect
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.boxShadow = '0 0 20px #00ffcc';
+    });
+
+    card.addEventListener('mouseout', () => {
+        card.style.boxShadow = 'none';
+    });
+});
+</script></body>
+</html>
